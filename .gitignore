@@ -13,3 +13,9 @@ buildNumber.properties
 
 ObjectStore
 
+.classpath
+.factorypath
+.project
+tododb Session.sql
+.settings
+.vscode
