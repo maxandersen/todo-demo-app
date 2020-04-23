@@ -21,6 +21,7 @@ public class Todo extends PanacheEntity {
 
     public String url;
 
+    
     public static List<Todo> findNotCompleted() {
         return list("completed", false);
     }
@@ -31,6 +32,11 @@ public class Todo extends PanacheEntity {
 
     public static long deleteCompleted() {
         return delete("completed", true);
+    }
+
+    @Override
+    public String toString() {
+        return this.title + "[" + this.completed + "]";
     }
 
 }
