@@ -16,6 +16,11 @@ public class Todo extends PanacheEntity {
 
     public boolean completed;
 
+
+    String getTitle() {
+        return title.toUpperCase();
+    }
+
     @Column(name = "ordering")
     public int order;
 
